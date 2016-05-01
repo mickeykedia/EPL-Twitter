@@ -94,23 +94,18 @@ function twitterStreamProducer(firehose) {
     var record = {};
     var recordParams = {};
     stream.on('tweet', function (tweet) {
-       if (tweet.coordinates){
-            if (tweet.coordinates !== null){ 
-              console.log(JSON.stringify(tweet));
-              recordParams = {
-                  DeliveryStreamName: config.firehose.DeliveryStreamName,
-                  Record: {
-                    Data: JSON.stringify(tweet)+',\n'
-                  }
-              };
-              firehose.putRecord(recordParams, function(err, data) {
-                if (err) {
-                  log.error(err);
-                }
-              });
-             
-          }
-        }
+      console.log(JSON.stringify(tweet));
+      recordParams = {
+	  DeliveryStreamName: config.firehose.DeliveryStreamName,
+	  Record: {
+	    Data: JSON.stringify(tweet)+',\n'
+	  }
+      };
+      firehose.putRecord(recordParams, function(err, data) {
+	if (err) {
+	  log.error(err);
+	}
+      });
     });
 
   }
