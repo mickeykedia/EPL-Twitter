@@ -41,4 +41,5 @@ twitter_credentials.txt
 epl-twitter.pem
 twitter-streaming-firehose-nodejs/config.js
 twitter-streaming-firehose-nodejs/node_modules/*
+.idea/*
 
