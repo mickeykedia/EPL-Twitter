@@ -98,7 +98,7 @@ function twitterStreamProducer(firehose) {
       recordParams = {
 	  DeliveryStreamName: config.firehose.DeliveryStreamName,
 	  Record: {
-	    Data: JSON.stringify(tweet)+',\n'
+	    Data: JSON.stringify(tweet)+'\n'
 	  }
       };
       firehose.putRecord(recordParams, function(err, data) {
