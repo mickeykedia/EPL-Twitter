@@ -3,6 +3,8 @@
 
 Collecting Tweets using the Twitter streaming API for analyzing the reaction and support for Leicester during its match against Manchester United (1st May, 2016) in the English Premier League. 
 
+Look at a visualization [here](https://mickeykedia.github.io/epl-twitter-viz/).
+
 Edit: Also collecting Tweets during Chelsea vs Tottenham match (2nd May, 2016) as a draw for Tottenham means that Leicester would win the premier league
 
 Edit 2: Tottenham drew ! Leicester has won the leage. Twitter has gone nuts. Thankfully my stream is working !! Woohoo
