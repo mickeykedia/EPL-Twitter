@@ -11,6 +11,9 @@ Edit: Also collecting Tweets during Chelsea vs Tottenham match (2nd May, 2016) a
 
 Edit 2: Tottenham drew ! Leicester has won the leage. Twitter has gone nuts. Thankfully my stream is working !! Woohoo
 
+Edit 3: Used the same setup to collect tweets for the Champions League final (Real Madrid vs Atletico Madrid), and Game 6 in the Western Conference playoffs (Warriors vs OKC) 
+
+
 ## Motivation
 
 - Play with the Twitter Streaming API
@@ -115,3 +118,9 @@ I also tried out this fine [tutorial](http://socialmedia-class.org/twittertutori
 - Query data 
 - Map it !
 - Plot it !
+- 
+
+## Data setup
+- S3 bucket epl-twitter/raw-data2016/05/28 - UCL Finals
+- S3 buckec epl-twitter/raw-data2016/05/29 - Game 6 warriors vs okc 
+
